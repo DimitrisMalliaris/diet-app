@@ -10,3 +10,5 @@ A diet app built for android phones using the android studio and the Google's fi
 
 ![food selection selected](https://user-images.githubusercontent.com/73944749/176214754-00d6e6c6-e942-4d0b-a1cb-50d0ebe68c2e.png)
 ![food quantity](https://user-images.githubusercontent.com/73944749/176214776-d27b06a7-bad3-4f99-8d00-eb442f57faf3.png)
+
+![main activity - diary entry](https://user-images.githubusercontent.com/73944749/176214980-e9b41f3f-1ecb-44ca-9b8c-e9d1c407312e.png)
