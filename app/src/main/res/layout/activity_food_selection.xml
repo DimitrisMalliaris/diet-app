@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodSelectionActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.1" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:background="@color/dietPlannerGreen"
+                android:text="Select food types:"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBoxFruit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_image_96px_2"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:button="@drawable/empty_transparent"
+                android:foreground="@drawable/fruit"
+                android:onClick="AddToFoodList"
+                android:tag="Fruit" />
+
+            <CheckBox
+                android:id="@+id/checkBoxVegetable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_image_96px_2"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:button="@drawable/empty_transparent"
+                android:foreground="@drawable/vegetable"
+                android:onClick="AddToFoodList"
+                android:tag="Vegetable" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBread"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_image_96px_2"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:button="@drawable/empty_transparent"
+                android:foreground="@drawable/bread"
+                android:onClick="AddToFoodList"
+                android:tag="Bread" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBoxEgg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_image_96px_2"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:button="@drawable/empty_transparent"
+                android:foreground="@drawable/egg"
+                android:onClick="AddToFoodList"
+                android:tag="Egg" />
+
+            <CheckBox
+                android:id="@+id/checkBoxFish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_image_96px_2"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:button="@drawable/empty_transparent"
+                android:foreground="@drawable/fish"
+                android:onClick="AddToFoodList"
+                android:tag="Fish" />
+
+            <CheckBox
+                android:id="@+id/checkBoxMeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_image_96px_2"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:button="@drawable/empty_transparent"
+                android:foreground="@drawable/meat"
+                android:onClick="AddToFoodList"
+                android:tag="Meat" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBoxMilk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_image_96px_2"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:button="@drawable/empty_transparent"
+                android:foreground="@drawable/milk"
+                android:onClick="AddToFoodList"
+                android:tag="Milk" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSweet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_image_96px_2"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:button="@drawable/empty_transparent"
+                android:foreground="@drawable/sweet"
+                android:onClick="AddToFoodList"
+                android:tag="Sweet" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSoup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_image_96px_2"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:button="@drawable/empty_transparent"
+                android:foreground="@drawable/soup"
+                android:onClick="AddToFoodList"
+                android:tag="Soup" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:id="@+id/checkBoxFries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_image_96px_2"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:button="@drawable/empty_transparent"
+                android:foreground="@drawable/fries"
+                android:onClick="AddToFoodList"
+                android:tag="Fries" />
+
+            <CheckBox
+                android:id="@+id/checkBoxPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_image_96px_2"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:button="@drawable/empty_transparent"
+                android:foreground="@drawable/pizza"
+                android:onClick="AddToFoodList"
+                android:tag="Pizza" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBurger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/white_image_96px_2"
+                android:backgroundTint="@color/white"
+                android:backgroundTintMode="multiply"
+                android:button="@drawable/empty_transparent"
+                android:foreground="@drawable/burger"
+                android:onClick="AddToFoodList"
+                android:tag="Burger" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="42dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonCancelFoodSel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="4"
+                android:backgroundTint="#cb5141"
+                android:onClick="ButtonCancelClick"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/buttonNextFoodSel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="4"
+                android:backgroundTint="#06d6a0"
+                android:onClick="ButtonNextClick"
+                android:text="Next" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "860903287553",
+    "project_id": "dietplanner-663e1",
+    "storage_bucket": "dietplanner-663e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860903287553:android:bed9a11cb8b45e78960900",
+        "android_client_info": {
+          "package_name": "com.malliaris_traga.dietplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860903287553-11hg57gr3pu8ft23nje90aq8fpotlgkk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnV6mTF4jJ-eVrZmIRRFUx3fumX8-4NoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860903287553-11hg57gr3pu8ft23nje90aq8fpotlgkk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
